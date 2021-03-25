@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+  font-size: 24px;
 }
 
 .App-logo {
@@ -14,7 +19,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: radial-gradient( circle 300px at 8% 89.3%,  rgba(20,157,208,1) 0%, rgba(140,63,226,1) 90% );
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,10 +34,13 @@
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  0% {
+    transform: rotate(0deg) scale3d(1, 1, 1);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: rotate(360deg) scale3d(-1.5, -2.5, -0.5);
+  }
+  100% {
+    transform: rotate(360deg) scale3d(1, 1, 1);
   }
 }
